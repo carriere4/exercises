@@ -7,6 +7,8 @@ func half(n int) (int, bool) {
 }
 
 func main() {
-	h, even := half(5)
+	var h int
+	var even bool
+	h, even = half(5)
 	fmt.Println(h, even)
 }
