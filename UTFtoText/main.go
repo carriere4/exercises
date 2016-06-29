@@ -40,7 +40,7 @@ func main() {
 	}
 }
 
-/* The code produces a "slice bounds out of range" panic. (https://play.golang.org/p/r-uswaokMx)
+/* MORE NOTES FOR MY NEWBIE SELF: The code produces a "slice bounds out of range" panic. (https://play.golang.org/p/r-uswaokMx)
 The problem here: for range moves through the string byte by byte, whereas k and j increase in steps of 2 or 3, respectively.
 At some point, either k, j, or j+1 is larger than len(str),
 which is when one of the slice operations on str fails.
