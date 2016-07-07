@@ -18,7 +18,9 @@ import (
 )
 
 func main() {
-	str := "8511033781167310910568528451100"
+	fmt.Print("Enter numbers without spaces: ")
+	var str string
+	fmt.Scanln(&str)
 	//fmt.Printf("%v \n", string(65))
 	//fmt.Println(len(str))
 	for j, k := 0, 2; j < len(str)-1 && k < len(str); {
@@ -38,6 +40,7 @@ func main() {
 			}
 		}
 	}
+	fmt.Println()
 }
 
 /* MORE NOTES FOR MY NEWBIE SELF: The code produces a "slice bounds out of range" panic. (https://play.golang.org/p/r-uswaokMx)
